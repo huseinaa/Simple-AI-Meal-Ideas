@@ -21,6 +21,9 @@ with st.form("meal_form"):
     specifications = st.text_input("Extra Specifications", placeholder="e.g., high protein, vegetarian, salad")
     submitted = st.form_submit_button("Generate Meal Ideas")
 
+gemini_api_key=st.secrets["GEMINI_API_KEY"]
+openai_api_key=st.secrets["OPENAI_API_KEY"]
+
 gemini_llm_instance = LLM.create(provider=LLMProvider.GEMINI, model_name="gemini-1.5-flash")
 openai_llm_instance = LLM.create(provider=LLMProvider.OPENAI, model_name="gpt-4o-mini")
 

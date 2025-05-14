@@ -53,13 +53,13 @@ The ouput should only be the 6 meal plan ideas with the respective ingredients u
 final_prompt = prompt.format(meal=meal, ingredients=ingredients, specifications=specifications)
 
 try:
-    gemini_response = gemini_llm_instance.generate_response(prompt=final_prompt, max_tokens=500)
+    gemini_response = gemini_llm_instance.generate_response(prompt=final_prompt, max_tokens=600)
     print(gemini_response)
 except Exception as e:
     print(f"Gemini failed with error: {e}")
     for attempt in range(1, 4):
         try:
-            openai_response = openai_llm_instance.generate_response(prompt=final_prompt, max_tokens=500)
+            openai_response = openai_llm_instance.generate_response(prompt=final_prompt, max_tokens=600)
             print(f"OpenAI response (attempt {attempt}): {openai_response}")
             break
         except Exception as oe:
