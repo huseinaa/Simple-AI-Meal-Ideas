@@ -24,7 +24,7 @@ Ingredients Available: {ingredients}
 Extra Specifications: {specifications}
 
 ##Output
-The ouput should only be the 6 meal plan ideas with the respective ingredients used, and a very simple short structured instructions to how we can do it, and nothing else in the following format:
+The ouput should only be the 6 meal plan ideas with the respective ingredients used, and a simple 2-3 line structured instructions to how we can do it, and nothing else in the following format:
 1. Meal Name
     **Ingredients: **
     **Instructions: **
